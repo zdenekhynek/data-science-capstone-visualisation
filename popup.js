@@ -12,7 +12,7 @@ export class Popup extends PureComponent {
       color: 'white',
       backgroundColor: 'black',
       pointerEvents: 'none',
-      transform: 'translate(20px, -50%)',
+      transform: 'translate(10px, -50%)',
     };
 
     const arrowStyle = {
