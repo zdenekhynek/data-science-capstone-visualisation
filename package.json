@@ -1,11 +1,13 @@
 {
-  "name": "point-cloud-laz",
+  "name": "capstone-data-viz",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --progress --hot --port 3000 --open",
     "start-local": "webpack-dev-server --env.local --progress --hot --open",
-    "heroku-postbuild": "yarn run build"
+    "build": "webpack --config webpack.prod.config.js -p",
+    "heroku-postbuild": "yarn run build",
+    "start-server": "node ./server/app.js"
   },
   "dependencies": {
     "deck.gl": "4.0.0-rc.4",
@@ -18,5 +20,8 @@
     "buble-loader": "^0.4.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=6.2.0"
   }
 }
