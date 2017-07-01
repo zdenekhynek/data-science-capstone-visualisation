@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --progress --hot --port 3000 --open",
-    "start-local": "webpack-dev-server --env.local --progress --hot --open"
+    "start-local": "webpack-dev-server --env.local --progress --hot --open",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "deck.gl": "4.0.0-rc.4",
