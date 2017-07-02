@@ -139,7 +139,7 @@ class CapstoneViz extends PureComponent {
   }
 
   onInitialized(gl) {
-    gl.clearColor(0.07, 0.14, 0.19, 1);
+    gl.clearColor(0, 0, 0, 1);
     gl.enable(gl.DEPTH_TEST);
     gl.depthFunc(gl.LEQUAL);
   }
